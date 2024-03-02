@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:job_search_app/chat_page.dart';
+import 'package:job_search_app/home_page.dart';
 import 'package:job_search_app/login_page.dart';
 import 'package:job_search_app/register_page.dart';
 
@@ -16,10 +17,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
+        primaryColor: Colors.white54,
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.greenAccent),
         useMaterial3: true,
       ),
-      home: ChatPage(),
+      home: HomePage(),
     );
   }
 }
