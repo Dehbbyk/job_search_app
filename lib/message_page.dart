@@ -3,17 +3,36 @@ import 'package:flutter/material.dart';
 class MessagePage extends StatefulWidget{
 
   @override
-  State<MessagePage> createState() => _HomePageState();
+  State<MessagePage> createState() => _MessagePageState();
 }
 
-class _MessagePageState extends State<HomePage> {
+class _MessagePageState extends State<MessagePage> {
   @override
   Widget build(BuildContext context){
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          "Message",
+        title: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Text(
+              "Message",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 16
+              ),
+            ),
+          ],
         ),
+        actions: [
+          IconButton(
+            color: Colors.black,
+              onPressed: (){},
+              icon: Icon(
+                Icons.search_rounded,
+                size: 35,
+              )
+          )
+        ],
       ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: 0,

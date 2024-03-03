@@ -11,7 +11,30 @@ class _ChatPageState extends State<ChatPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Text(
+                "Anaya Sanji",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 14,
+              ),
+            )
+          ],
+        ),
+        actions: [
+          IconButton(
+              color: Colors.black,
+              onPressed: (){},
+              icon: Icon(
+                Icons.call,
+                size: 35,
+              )
+          )
+        ],
+      ),
       body: Text("This page consist of chat with Anaya Sanji"),
       floatingActionButton: FloatingActionButton(
         child: Row(

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:job_search_app/chat_page.dart';
 import 'package:job_search_app/home_page.dart';
 import 'package:job_search_app/login_page.dart';
+import 'package:job_search_app/message_page.dart';
 import 'package:job_search_app/register_page.dart';
 
 void main() {
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.greenAccent),
         useMaterial3: true,
       ),
-      home: HomePage(),
+      home: RegisterPage(),
     );
   }
 }
