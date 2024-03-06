@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:job_search_app/home/pages/home_view.dart';
+import 'package:job_search_app/home/profile/profile_view.dart';
+import 'package:job_search_app/message/message_view.dart';
 
 class HomePage extends StatefulWidget{
   
@@ -7,21 +10,30 @@ class HomePage extends StatefulWidget{
 }
 
 class _HomePageState extends State<HomePage> {
+  var listOfPages = [
+    const HomeView(),
+     MessageView(),
+    const ProfileView()
+
+  ];
+  var selectedIndex = 0;
+
   @override
   Widget build(BuildContext context){
     return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          "Popular Job",
-        ),
-      ),
+      body: listOfPages[selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
-        currentIndex: 0,
-        unselectedItemColor: Colors.blueGrey,
-        selectedItemColor: Colors.blueGrey,
+        currentIndex: selectedIndex,
+        unselectedItemColor: Colors.black38,
+        selectedItemColor: Colors.lightBlue,
         showSelectedLabels: true,
         showUnselectedLabels: true,
-        items: [
+        onTap: (value){
+          setState(() {
+            selectedIndex = value;
+          });
+        },
+        items: const [
         BottomNavigationBarItem(icon: Icon(Icons.home_filled),
             label: "Home"
         ),
