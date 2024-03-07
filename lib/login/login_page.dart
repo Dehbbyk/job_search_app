@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:job_search_app/home/pages/home_view.dart';
 import 'package:job_search_app/login/continue_with_item.dart';
 
@@ -74,16 +76,32 @@ Widget build(BuildContext context) {
             ),
           ),
           ContinueWithItem(),
-          SizedBox(
-              height: 100,
-              child: ListView(
-                shrinkWrap: true,
-                scrollDirection: Axis.horizontal,
-                children: [
-                  Image.asset('assets/images/google_image.png'),
-                  Image.asset('assets/images/facebook_image.png')
-                ],
-              )
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+                SizedBox(
+                  height: 100,
+                  child: ListView(
+                    shrinkWrap: true,
+                    scrollDirection: Axis.horizontal,
+                    children: [
+                      Image.asset(
+                          'assets/images/google_image.png',
+                        height: 50,
+                        width:50
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Image.asset(
+                          'assets/images/facebook_image.png',
+                        height: 50,
+                        width: 50,
+                      )
+                    ],
+                  )
+              ),
+            ],
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,

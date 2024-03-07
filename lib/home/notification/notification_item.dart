@@ -17,7 +17,7 @@ class NotificationPage extends StatelessWidget {
           "Notification",
           style: TextStyle(
               fontWeight: FontWeight.bold,
-              fontSize: 16
+              fontSize: 22
           ),
         ),
         centerTitle: true,
@@ -30,15 +30,15 @@ class NotificationPage extends StatelessWidget {
               title: Text(
                 "New Post",
                 style: TextStyle(
-                    fontSize: 14,
+                    fontSize: 18,
                     fontWeight: FontWeight.bold
                 ),
               ),
               subtitle: Text(
                 "If any post update",
                 style: TextStyle(
-                    color: Colors.black38,
-                    fontSize: 12
+                    color: Colors.black54,
+                    fontSize: 14
                 ),
               ),
               trailing: Switch(
@@ -52,15 +52,15 @@ class NotificationPage extends StatelessWidget {
               title: Text(
                 "Got Hired",
                 style: TextStyle(
-                    fontSize: 14,
+                    fontSize: 18,
                     fontWeight: FontWeight.bold
                 ),
               ),
               subtitle: Text(
                 "If you got hired by any company",
                 style: TextStyle(
-                    color: Colors.black38,
-                    fontSize: 12
+                    color: Colors.black54,
+                    fontSize: 14
                 ),
               ),
               trailing: Switch(
@@ -69,7 +69,95 @@ class NotificationPage extends StatelessWidget {
                 activeColor: Colors.white,
                 activeTrackColor: Colors.teal.shade300,
               ),
-            )
+            ),
+            ListTile(
+              title: Text(
+                "Get Rejected",
+                style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold
+                ),
+              ),
+              subtitle: Text(
+                "If you got rejected by any company",
+                style: TextStyle(
+                    color: Colors.black54,
+                    fontSize: 14
+                ),
+              ),
+              trailing: Switch(
+                value: false,
+                onChanged: (value){},
+                activeColor: Colors.white,
+                activeTrackColor: Colors.teal.shade300,
+              ),
+            ),
+            ListTile(
+              title: Text(
+                "Message",
+                style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold
+                ),
+              ),
+              subtitle: Text(
+                "Got any new message",
+                style: TextStyle(
+                    color: Colors.black54,
+                    fontSize: 14
+                ),
+              ),
+              trailing: Switch(
+                value: false,
+                onChanged: (value){},
+                activeColor: Colors.white,
+                activeTrackColor: Colors.teal.shade300,
+              ),
+            ),
+            ListTile(
+              title: Text(
+                "Call",
+                style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold
+                ),
+              ),
+              subtitle: Text(
+                "Have a call",
+                style: TextStyle(
+                    color: Colors.black54,
+                    fontSize: 14
+                ),
+              ),
+              trailing: Switch(
+                value: false,
+                onChanged: (value){},
+                activeColor: Colors.white,
+                activeTrackColor: Colors.teal.shade300,
+              ),
+            ),
+            ListTile(
+              title: Text(
+                "Dark Mode",
+                style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold
+                ),
+              ),
+              subtitle: Text(
+                "Enable dark theme",
+                style: TextStyle(
+                    color: Colors.black54,
+                    fontSize: 14
+                ),
+              ),
+              trailing: Switch(
+                value: false,
+                onChanged: (value){},
+                activeColor: Colors.white,
+                activeTrackColor: Colors.teal.shade300,
+              ),
+            ),
           ],
         ),
       ),

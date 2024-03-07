@@ -56,8 +56,11 @@ class RegisterPage extends StatelessWidget {
               ),
             ),
             SizedBox(
+              height: 10,
+            ),
+            SizedBox(
               height: 50,
-              width: 400,
+              width: 700,
               child: ElevatedButton(
                 onPressed: () {
                   Navigator.push(
@@ -69,16 +72,29 @@ class RegisterPage extends StatelessWidget {
               ),
             ),
             ContinueWithItem(),
-            SizedBox(
-              height: 100,
-              child: ListView(
-                shrinkWrap: true,
-                scrollDirection: Axis.horizontal,
-                children: [
-                  Image.asset('assets/images/google_image.png'),
-                  Image.asset('assets/images/facebook_image.png')
-                ],
-              )
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                SizedBox(
+                  height: 100,
+                  child: ListView(
+                    shrinkWrap: true,
+                    scrollDirection: Axis.horizontal,
+                    children: [
+                      Image.asset(
+                          'assets/images/google_image.png',
+                          height: 50,
+                          width:50
+                      ),
+                      Image.asset(
+                        'assets/images/facebook_image.png',
+                        height: 50,
+                        width: 50,
+                      )
+                    ],
+                  )
+                ),
+              ],
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
