@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:job_search_app/home/pages/home_view.dart';
+import 'package:job_search_app/home/homeViews/homeWidgets/home_view.dart';
 import 'package:job_search_app/home/profile/profile_view.dart';
-import 'package:job_search_app/message/message_view.dart';
+
+import '../../message/message_view.dart';
 
 class HomePage extends StatefulWidget{
   

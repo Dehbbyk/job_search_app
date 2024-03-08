@@ -1,4 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:job_search_app/home/notification/widgets/listile_1.dart';
+import 'package:job_search_app/home/notification/widgets/listile_2.dart';
+import 'package:job_search_app/home/notification/widgets/listile_3.dart';
+import 'package:job_search_app/home/notification/widgets/listile_4.dart';
+import 'package:job_search_app/home/notification/widgets/listile_5.dart';
+import 'package:job_search_app/home/notification/widgets/listile_6.dart';
 
 class NotificationPage extends StatelessWidget {
   const NotificationPage({super.key});
@@ -26,141 +32,24 @@ class NotificationPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            ListTile(
-              title: Text(
-                "New Post",
-                style: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold
-                ),
-              ),
-              subtitle: Text(
-                "If any post update",
-                style: TextStyle(
-                    color: Colors.black54,
-                    fontSize: 14
-                ),
-              ),
-              trailing: Switch(
-                  value: true,
-                  onChanged: (value){},
-                activeColor: Colors.white,
-                activeTrackColor: Colors.teal.shade300,
-              ),
-            ),
-            ListTile(
-              title: Text(
-                "Got Hired",
-                style: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold
-                ),
-              ),
-              subtitle: Text(
-                "If you got hired by any company",
-                style: TextStyle(
-                    color: Colors.black54,
-                    fontSize: 14
-                ),
-              ),
-              trailing: Switch(
-                value: true,
-                onChanged: (value){},
-                activeColor: Colors.white,
-                activeTrackColor: Colors.teal.shade300,
-              ),
-            ),
-            ListTile(
-              title: Text(
-                "Get Rejected",
-                style: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold
-                ),
-              ),
-              subtitle: Text(
-                "If you got rejected by any company",
-                style: TextStyle(
-                    color: Colors.black54,
-                    fontSize: 14
-                ),
-              ),
-              trailing: Switch(
-                value: false,
-                onChanged: (value){},
-                activeColor: Colors.white,
-                activeTrackColor: Colors.teal.shade300,
-              ),
-            ),
-            ListTile(
-              title: Text(
-                "Message",
-                style: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold
-                ),
-              ),
-              subtitle: Text(
-                "Got any new message",
-                style: TextStyle(
-                    color: Colors.black54,
-                    fontSize: 14
-                ),
-              ),
-              trailing: Switch(
-                value: false,
-                onChanged: (value){},
-                activeColor: Colors.white,
-                activeTrackColor: Colors.teal.shade300,
-              ),
-            ),
-            ListTile(
-              title: Text(
-                "Call",
-                style: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold
-                ),
-              ),
-              subtitle: Text(
-                "Have a call",
-                style: TextStyle(
-                    color: Colors.black54,
-                    fontSize: 14
-                ),
-              ),
-              trailing: Switch(
-                value: false,
-                onChanged: (value){},
-                activeColor: Colors.white,
-                activeTrackColor: Colors.teal.shade300,
-              ),
-            ),
-            ListTile(
-              title: Text(
-                "Dark Mode",
-                style: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold
-                ),
-              ),
-              subtitle: Text(
-                "Enable dark theme",
-                style: TextStyle(
-                    color: Colors.black54,
-                    fontSize: 14
-                ),
-              ),
-              trailing: Switch(
-                value: false,
-                onChanged: (value){},
-                activeColor: Colors.white,
-                activeTrackColor: Colors.teal.shade300,
-              ),
-            ),
+            Listile1(),
+            Listile2(),
+            Listile3(),
+            Listile4(),
+            Listile5(),
+            Listile6(),
           ],
         ),
       ),
       );
   }
 }
+
+
+
+
+
+
+
+
+
