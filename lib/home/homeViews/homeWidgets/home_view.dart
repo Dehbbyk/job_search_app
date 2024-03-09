@@ -47,7 +47,7 @@ class HomeView extends StatelessWidget {
                   Container(
                     margin: EdgeInsets.all(20),
                     height: 50,
-                    width: 650,
+                    width: 200,
                     decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(16),

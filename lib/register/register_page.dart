@@ -45,9 +45,7 @@ class RegisterPage extends StatelessWidget {
             Email(),
             SizedBox(height: 20),
             Password(),
-            SizedBox(
-              height: 10,
-            ),
+            SizedBox(height: 20),
             SignUp(),
             SizedBox(height: 15),
             ContinueWithItem(),
