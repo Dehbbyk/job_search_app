@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:job_search_app/home/homeViews/pages/home_page.dart';
 import 'package:job_search_app/home/notification/notification_item.dart';
+import 'package:job_search_app/login/login_page.dart';
 import 'package:job_search_app/register/register_page.dart';
 
 void main() {

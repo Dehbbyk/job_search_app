@@ -60,9 +60,3 @@ class MessageView extends StatelessWidget{
   }
 }
 
-
-
-
-
-
-
